@@ -5,5 +5,8 @@
  */
 
 module.exports = {
-  /* Your site config here */
+  siteMetadata: {
+    name: `Muhammadathar.com`,
+  },
+  plugins: [`gatsby-plugin-typescript`, "gatsby-plugin-tslint"],
 }

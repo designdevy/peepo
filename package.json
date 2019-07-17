@@ -10,15 +10,34 @@
     "format": "prettier --write src/**/*.{js,jsx}",
     "start": "npm run develop",
     "serve": "gatsby serve",
+    "type-check": "tsc --noEmit",
+    "lint": "tslint --project .",
     "test": "echo \"Write tests! -> https://gatsby.dev/unit-testing\""
   },
   "dependencies": {
     "gatsby": "^2.9.9",
+    "gatsby-plugin-tslint": "^0.0.2",
+    "gatsby-plugin-typescript": "^2.1.0",
     "react": "^16.8.6",
     "react-dom": "^16.8.6"
   },
   "devDependencies": {
-    "prettier": "^1.18.2"
+    "@babel/core": "^7.0.0",
+    "@types/react": "^16.8.21",
+    "@types/react-dom": "^16.8.4",
+    "babel-jest": "^24.8.0",
+    "babel-preset-gatsby": "^0.2.0",
+    "identity-obj-proxy": "^3.0.0",
+    "jest": "^24.8.0",
+    "prettier": "^1.18.2",
+    "react-test-renderer": "^16.8.6",
+    "ts-jest": "^24.0.2",
+    "tslint": "^5.17.0",
+    "tslint-config-prettier": "^1.18.0",
+    "tslint-loader": "^3.5.4",
+    "tslint-plugin-prettier": "^2.0.1",
+    "tslint-react": "^4.0.0",
+    "typescript": "^3.5.2"
   },
   "repository": {
     "type": "git",
