@@ -2,6 +2,7 @@ import BlogLogoLarge from "../components/blogLogoLarge"
 import BlogLogoSmall from "../components/blogLogoSmall"
 
 import { Box, Grommet, Heading, Text } from "grommet"
+import { Github } from "grommet-icons"
 import React, { Component } from "react"
 import Logo from "../components/logo"
 import theme from "../theme"
@@ -88,6 +89,11 @@ export default () => (
             </Box>
           </Box>
         </Box>
+      </Box>
+      <Box pad="medium" justify="end">
+        <a href="https://github.com/designdevy" target="_blank">
+          <Github />
+        </a>
       </Box>
     </Box>
   </Grommet>
