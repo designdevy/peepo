@@ -8,5 +8,5 @@ module.exports = {
   siteMetadata: {
     name: `Muhammadathar.com`,
   },
-  plugins: [`gatsby-plugin-typescript`, "gatsby-plugin-tslint"],
+  plugins: [`gatsby-plugin-typescript`, "gatsby-plugin-tslint", `gatsby-plugin-styled-components`],
 }
