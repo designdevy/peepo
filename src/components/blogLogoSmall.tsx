@@ -1,8 +1,8 @@
 import React from "react"
 
 const BlogLogoSmall = props => (
-  <svg width="1em" height="1em" viewBox="0 0 256 256" {...props}>
-    <title>{"Group 7 Copy 6"}</title>
+  <svg viewBox="0 0 256 256" {...props}>
+    <title>{"Blog Logo Small"}</title>
     <g fill="none" fillRule="evenodd">
       <rect
         stroke="#161B3D"
