@@ -25,9 +25,11 @@ export default () => (
           </Box>
 
           <Box pad="medium" flex="shrink" align="center" justify="center">
-            <Heading margin="none" color="dark-2" textAlign="center">
-              Muhammad Athar
-            </Heading>
+            <Box margin={{ bottom: "medium" }}>
+              <Heading margin="none" color="dark-2" textAlign="center">
+                Muhammad Athar
+              </Heading>
+            </Box>
 
             <Box
               flex
