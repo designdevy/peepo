@@ -1,4 +1,4 @@
-import BlogLogoSmall from "../components/blogLogoSmall"
+import BlogLogoLarge from "../components/blogLogoLarge"
 
 import { Box, Grommet, Heading, ResponsiveContext, Text } from "grommet"
 import { Github } from "grommet-icons"
@@ -26,7 +26,7 @@ export default () => (
 
           <Box pad="medium" flex="shrink" align="center" justify="center">
             <Box margin={{ bottom: "medium" }}>
-              <Heading margin="none" color="dark-2" textAlign="center">
+              <Heading margin="none" color="brand" textAlign="center">
                 Muhammad Athar
               </Heading>
             </Box>
@@ -54,10 +54,12 @@ export default () => (
                   },
                 ]}
               >
-                Design Technologist
+                <Text color="brand" weight="bold">
+                  Design Technologist
+                </Text>
               </Box>
               <Box pad="small" justify="center" align="center">
-                by profession
+                <Text color="brand">by profession</Text>
               </Box>
             </Box>
             <Box
@@ -77,19 +79,17 @@ export default () => (
                   delay: 600,
                 }}
               >
-                Polyglot
+                <Text color="brand" weight="bold">
+                  Polyglot
+                </Text>
               </Box>
               <Box pad="small" justify="center" align="center">
-                by hobby
+                <Text color="brand">by hobby</Text>
               </Box>
             </Box>
-            <Box
-              flex
-              pad="small"
-              direction={size === "small" ? "column" : "row"}
-            >
+            <Box pad="small" direction={size === "small" ? "column" : "row"}>
               <Box pad="small" justify="center" align="center">
-                founder and author at
+                <Text color="brand">founder and author at</Text>
               </Box>
               <Box
                 justify="center"
@@ -103,21 +103,26 @@ export default () => (
                   delay: 800,
                 }}
               >
-                <Box
-                  margin={{
-                    right: "small",
-                  }}
-                  justify="center"
-                >
-                  <BlogLogoSmall width="32px" height="32px" />
+                <Box justify="center">
+                  <a
+                    style={{ lineHeight: 0 }}
+                    href="https://www.designdev.io"
+                    target="_blank"
+                  >
+                    <BlogLogoLarge height="32px" />
+                  </a>
                 </Box>
-                <Box justify="center">designDev.io</Box>
+                <Box justify="center" weight="bold">
+                  <Text color="brand" weight="bold">
+                    .io
+                  </Text>
+                </Box>
               </Box>
             </Box>
           </Box>
           <Box pad="medium" justify="end">
             <a href="https://github.com/designdevy" target="_blank">
-              <Github />
+              <Github color="brand" />
             </a>
           </Box>
         </Box>

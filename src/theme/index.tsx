@@ -1,6 +1,9 @@
 const theme = {
   global: {
-    colors: {},
+    colors: {
+      brand: "#161B3D",
+      "dark-2": "#161B3D",
+    },
     font: {
       family: "Roboto",
       size: "18px",

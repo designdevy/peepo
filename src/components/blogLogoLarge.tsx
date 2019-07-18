@@ -1,7 +1,7 @@
 import React from 'react'
 
 const BlogLogoLarge = props => (
-  <svg width="1em" height="1em" viewBox="0 0 342 94" {...props}>
+  <svg viewBox="0 0 342 94" {...props}>
     <title>{'logo copy 2'}</title>
     <g fill="none" fillRule="evenodd">
       <path
