@@ -2,7 +2,7 @@ import BlogLogoLarge from "../components/blogLogoLarge"
 
 import { Box, Grommet, Heading, ResponsiveContext, Text } from "grommet"
 import { Github } from "grommet-icons"
-import React, { Component } from "react"
+import React from "react"
 import Logo from "../components/logo"
 import theme from "../theme"
 
@@ -34,7 +34,7 @@ export default () => (
             <Box
               flex
               pad="small"
-              direction={size === "small" ? "column" : "row"}
+              direction={size !== "small" ? "row" : undefined}
             >
               <Box
                 pad="small"
@@ -64,9 +64,8 @@ export default () => (
             </Box>
             <Box
               flex
-              direction="row"
               pad="small"
-              direction={size === "small" ? "column" : "row"}
+              direction={size !== "small" ? "row" : undefined}
             >
               <Box
                 pad="small"
@@ -87,7 +86,7 @@ export default () => (
                 <Text color="brand">by hobby</Text>
               </Box>
             </Box>
-            <Box pad="small" direction={size === "small" ? "column" : "row"}>
+            <Box pad="small" direction={size !== "small" ? "row" : undefined}>
               <Box pad="small" justify="center" align="center">
                 <Text color="brand">founder and author at</Text>
               </Box>
@@ -112,7 +111,7 @@ export default () => (
                     <BlogLogoLarge height="32px" />
                   </a>
                 </Box>
-                <Box justify="center" weight="bold">
+                <Box justify="center">
                   <Text color="brand" weight="bold">
                     .io
                   </Text>
