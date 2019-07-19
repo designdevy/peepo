@@ -4,6 +4,7 @@ import { Box, Grommet, Heading, ResponsiveContext, Text } from "grommet"
 import { Github } from "grommet-icons"
 import React from "react"
 import Logo from "../components/logo"
+import Snake from "../components/snake"
 import theme from "../theme"
 
 export default () => (
@@ -20,6 +21,7 @@ export default () => (
           direction="column"
           overflow={{ horizontal: "hidden" }}
         >
+          <Snake />
           <Box pad="medium">
             <Logo />
           </Box>
@@ -47,11 +49,11 @@ export default () => (
                     duration: 1000,
                     delay: 200,
                   },
-                  {
-                    type: "jiggle",
-                    duration: 1000,
-                    delay: 400,
-                  },
+                  // {
+                  //   type: "jiggle",
+                  //   duration: 1000,
+                  //   delay: 400,
+                  // },
                 ]}
               >
                 <Text color="brand" weight="bold">
