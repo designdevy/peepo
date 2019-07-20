@@ -3,9 +3,17 @@ import BlogLogoLarge from "../components/blogLogoLarge"
 import { Box, Grommet, Heading, ResponsiveContext, Text } from "grommet"
 import { Github } from "grommet-icons"
 import React from "react"
+import Bg from "../components/bg"
 import Logo from "../components/logo"
-import Snake from "../components/snake"
+import { motion } from "framer-motion"
 import theme from "../theme"
+
+const unicorns = []
+for (let i = 0; i < 50; i++) {
+  const randomNumberX = Math.floor((Math.random() * 10) / 2) + 5
+  const randomNumberY = Math.floor((Math.random() * 10) / 2) + 5
+  unicorns.push(<Bg key={i} />)
+}
 
 export default () => (
   <Grommet theme={theme} full>
@@ -21,18 +29,42 @@ export default () => (
           direction="column"
           overflow={{ horizontal: "hidden" }}
         >
-          <Snake />
+          {size !== "small" && (
+            <motion.div
+              whileHover={{ scale: 1.2, rotate: 90 }}
+              whileTap={{
+                scale: 0.8,
+                rotate: -90,
+                borderRadius: "100%",
+              }}
+              // animate={{ x: 100, opacity: 0.3 }}
+              // transition={{
+              //   yoyo: Infinity,
+              //   duration: 2,
+              //   ease: "easeInOut",
+              // }}
+              style={{
+                position: "absolute",
+                zIndex: 1,
+                top: "3em",
+                left: "3em",
+                backgroundColor: "#161B3D",
+                borderRadius: "10%",
+                width: "3em",
+                height: "3em",
+                // height: {{ size } !== "small" ? "3em" : "1em"}
+              }}
+            />
+          )}
           <Box pad="medium">
             <Logo />
           </Box>
-
           <Box pad="medium" flex="shrink" align="center" justify="center">
             <Box margin={{ bottom: "medium" }}>
               <Heading margin="none" color="brand" textAlign="center">
                 Muhammad Athar
               </Heading>
             </Box>
-
             <Box
               flex
               pad="small"
