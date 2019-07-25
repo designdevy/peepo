@@ -12,8 +12,9 @@ module.exports = {
     siteUrl: `https://www.muhammadathar.com`,
   },
   plugins: [
+    `gatsby-plugin-react-helmet`,
     `gatsby-plugin-typescript`,
-    "gatsby-plugin-tslint",
+    `gatsby-plugin-tslint`,
     `gatsby-plugin-styled-components`,
   ],
 }

@@ -3,11 +3,16 @@ import BlogLogoLarge from "../components/blogLogoLarge"
 import { Box, Grommet, Heading, ResponsiveContext, Text } from "grommet"
 import { Github } from "grommet-icons"
 import React from "react"
+import { Helmet } from "react-helmet"
 import Logo from "../components/logo"
 import theme from "../theme"
 
 export default () => (
   <Grommet theme={theme} full>
+    <Helmet>
+      <meta charSet="utf-8" />
+      <title>Muhammad Athar</title>
+    </Helmet>
     <ResponsiveContext.Consumer>
       {size => (
         <Box
