@@ -1,7 +1,3 @@
----
-description: Readme
----
-
 # Project Description
 
 ## My Personal Profile and Portfolio Website
