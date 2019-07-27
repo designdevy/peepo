@@ -1,23 +1,15 @@
-# Test Guide Page
+---
+description: Readme
+---
 
-## Getting Super Powers
+# Project Description
 
-Becoming a super hero is a fairly straight forward process:
+## My Personal Profile and Portfolio Website
 
-```
-$ give me super-powers
-```
+Tech Stack Used:
 
-{% hint style="info" %}
- Super-powers are granted randomly so please submit an issue if you're not happy with yours.
-{% endhint %}
-
-Once you're strong enough, save the world:
-
-```
-// Ain't no code for that yet, sorry
-echo 'You got to trust me on this, I saved the world'
-```
-
-
+* Gatsby
+* Styled Components
+* Grommet UI v2
+* Typescript
 
