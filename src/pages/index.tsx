@@ -51,12 +51,7 @@ export default () => (
                     type: "fadeIn",
                     duration: 1000,
                     delay: 200,
-                  },
-                  {
-                    type: "jiggle",
-                    duration: 1000,
-                    delay: 400,
-                  },
+                  }
                 ]}
               >
                 <Text color="brand" weight="bold">
