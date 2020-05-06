@@ -1,1 +1,11 @@
-<h1 align="center">My Personal Portfolio Website</h1>
+# Project Description
+
+## My Personal Profile and Portfolio Website
+
+Tech Stack Used:
+
+* Gatsby
+* Styled Components
+* Grommet UI v2
+* Typescript
+
